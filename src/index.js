@@ -8,13 +8,13 @@ require('firebase/firestore');
 
 // Initialize Firebase
 firebase.initializeApp({
-  apiKey: REACT_APP_FIREBASE_KEY,
-  authDomain: REACT_APP_AUTH_DOMAIN,
-  databaseURL: REACT_APP_DATABASE_URL,
-  projectId: REACT_APP_PROJECT_ID,
-  storageBucket: REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: REACT_APP_MESSAGING_STORAGE_ID,
-  appId: REACT_APP_APP_ID
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_STORAGE_ID,
+  appId: process.env.REACT_APP_APP_ID
 });
 
 ReactDOM.render(<App />, document.getElementById('evernote-container'));
