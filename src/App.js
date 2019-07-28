@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import SidebarComponent from './sidebar/sidebar';
 import EditorComponent from './editor/editor';
-const firebase = require('firebase');
+import firebase from 'firebase/app';
 
 const App = () => {
   const [selectedNoteIndex, setSelectedNoteIndex] = useState(null);

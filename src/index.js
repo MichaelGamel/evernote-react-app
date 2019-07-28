@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-const firebase = require('firebase');
-require('firebase/firestore');
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 // Initialize Firebase
 firebase.initializeApp({
